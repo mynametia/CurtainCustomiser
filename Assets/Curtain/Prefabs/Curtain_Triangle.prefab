@@ -99,16 +99,16 @@ MonoBehaviour:
   colourPresets:
   - colourName: Black
     texture: {fileID: 2800000, guid: cb67d66a454c20f498a22ff4593740a0, type: 3}
-    previewColour: {r: 0, g: 0, b: 0, a: 0}
+    previewColour: {r: 0, g: 0, b: 0, a: 1}
   - colourName: Blue
     texture: {fileID: 2800000, guid: e43ad77c03910a34380d57d1dfe404a6, type: 3}
-    previewColour: {r: 0.13725491, g: 0.34509805, b: 0.45882356, a: 0}
+    previewColour: {r: 0.13725491, g: 0.34509805, b: 0.45882356, a: 1}
   - colourName: Brown
     texture: {fileID: 2800000, guid: 18977da12fecb504297dd8805e963dad, type: 3}
-    previewColour: {r: 0.32156864, g: 0.2784314, b: 0.27058825, a: 0}
+    previewColour: {r: 0.32156864, g: 0.2784314, b: 0.27058825, a: 1}
   - colourName: Yellow
     texture: {fileID: 2800000, guid: 8e024b3db5dd55b4d8e7e19e7f3566b6, type: 3}
-    previewColour: {r: 0.9686275, g: 0.9176471, b: 0.6431373, a: 0}
+    previewColour: {r: 0.9686275, g: 0.9176471, b: 0.6431373, a: 1}
   currentColour:
     colourName: 
     texture: {fileID: 0}

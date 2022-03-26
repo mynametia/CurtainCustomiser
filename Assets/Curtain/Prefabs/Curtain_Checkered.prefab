@@ -99,13 +99,13 @@ MonoBehaviour:
   colourPresets:
   - colourName: Green
     texture: {fileID: 2800000, guid: 8989d2db8d16cb14ab36c511d4919397, type: 3}
-    previewColour: {r: 0.5137255, g: 0.7019608, b: 0.4431373, a: 0}
+    previewColour: {r: 0.5137255, g: 0.7019608, b: 0.4431373, a: 1}
   - colourName: Red
     texture: {fileID: 2800000, guid: dff2f4ed497121b4eba3ba1d53535ff4, type: 3}
-    previewColour: {r: 0.7882353, g: 0.32941177, b: 0.3372549, a: 0}
+    previewColour: {r: 0.7882353, g: 0.32941177, b: 0.3372549, a: 1}
   - colourName: Blue
     texture: {fileID: 2800000, guid: 9dc2fa4c2345d52429ec2ed928c83828, type: 3}
-    previewColour: {r: 0.28627452, g: 0.42745098, b: 0.5254902, a: 0}
+    previewColour: {r: 0.28627452, g: 0.42745098, b: 0.5254902, a: 1}
   currentColour:
     colourName: 
     texture: {fileID: 0}

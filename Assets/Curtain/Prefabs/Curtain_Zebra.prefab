@@ -99,7 +99,7 @@ MonoBehaviour:
   colourPresets:
   - colourName: Black
     texture: {fileID: 2800000, guid: ef52fc011b6577747a9b68227f94cb73, type: 3}
-    previewColour: {r: 0, g: 0, b: 0, a: 0}
+    previewColour: {r: 0, g: 0, b: 0, a: 1}
   currentColour:
     colourName: 
     texture: {fileID: 0}
