@@ -100,6 +100,9 @@ MonoBehaviour:
   - colourName: Grey
     texture: {fileID: 2800000, guid: 60986ebe05b77094a9c4b67037c0998b, type: 3}
     previewColour: {r: 0.3372549, g: 0.34509805, b: 0.35686275, a: 0}
+  - colourName: Light Grey
+    texture: {fileID: 2800000, guid: 864f7971c172e5b49884afcdd02c5f3c, type: 3}
+    previewColour: {r: 0.78823537, g: 0.7803922, b: 0.7607844, a: 0}
   currentColour:
     colourName: 
     texture: {fileID: 0}
