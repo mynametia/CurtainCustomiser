@@ -198,6 +198,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2119105256}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &401551228 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 3262265599269830118, guid: 52cf42db281f47841a5be27b48715b43,
+    type: 3}
+  m_PrefabInstance: {fileID: 2119105256}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &551150257
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1187,6 +1193,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1536437717979488526, guid: 22944403838f59041942313274e0a7d3,
+        type: 3}
+      propertyPath: curtainRenderer
+      value: 
+      objectReference: {fileID: 401551228}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22944403838f59041942313274e0a7d3, type: 3}
 --- !u!224 &1657145415 stripped
