@@ -1107,7 +1107,7 @@ PrefabInstance:
     - target: {fileID: 4087336035791901786, guid: 6e73e0e9b95206148a17b4c02c7483c2,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4087336035791901786, guid: 6e73e0e9b95206148a17b4c02c7483c2,
         type: 3}
@@ -1466,14 +1466,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1474547999}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6133105363503278690}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -1492,7 +1492,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.16470589, g: 0.16470589, b: 0.16470589, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1529,7 +1529,6 @@ GameObject:
   - component: {fileID: 1521260942}
   - component: {fileID: 1521260941}
   - component: {fileID: 1521260940}
-  - component: {fileID: 1521260944}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1621,19 +1620,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1521260944
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1521260939}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5689ddbbca574dd4dac43da6b7b3ea97, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CurtainSelectionUI: {fileID: 1020832078}
 --- !u!1001 &1657145414
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1669,7 +1655,7 @@ PrefabInstance:
     - target: {fileID: 1536437717319278466, guid: 22944403838f59041942313274e0a7d3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1536437717319278466, guid: 22944403838f59041942313274e0a7d3,
         type: 3}
@@ -1824,6 +1810,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1972398827}
   - component: {fileID: 1972398828}
+  - component: {fileID: 1972398829}
   m_Layer: 5
   m_Name: LeftMenu
   m_TagString: Untagged
@@ -1879,6 +1866,21 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &1972398829
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972398826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5689ddbbca574dd4dac43da6b7b3ea97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollapsableUI: {fileID: 1020832078}
+  ButtonArrow: {fileID: 1474547999}
+  collapsed: 1
 --- !u!1001 &2119105256
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2047,14 +2049,14 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 6133105363503278688}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: SimpleARButtonPressed
+      - m_Target: {fileID: 1972398829}
+        m_TargetAssemblyTypeName: UiController, Assembly-CSharp
+        m_MethodName: ToggleCollapse
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
