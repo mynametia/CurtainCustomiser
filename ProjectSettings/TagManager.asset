@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Checkered
+  - Denim
+  - Polka Dots
+  - Wool
+  - Triangles
+  - Grid
+  - Zebra Stripes
   layers:
   - Default
   - TransparentFX

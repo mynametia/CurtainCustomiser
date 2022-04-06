@@ -188,7 +188,7 @@ PrefabInstance:
     - target: {fileID: 8049096419728846460, guid: 7d8d51d560afff548bac04e6a719384f,
         type: 3}
       propertyPath: m_Name
-      value: Curtain_Wool_240x140
+      value: Curtain_Wool
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7d8d51d560afff548bac04e6a719384f, type: 3}
@@ -269,7 +269,7 @@ PrefabInstance:
     - target: {fileID: 8049096419728846460, guid: c09d0f476890ab24cade8940d5142744,
         type: 3}
       propertyPath: m_Name
-      value: Curtain_Zebra_240x140
+      value: Curtain_Zebra
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c09d0f476890ab24cade8940d5142744, type: 3}
@@ -338,7 +338,7 @@ PrefabInstance:
     - target: {fileID: 8049096419728846460, guid: fdc1059a7ab76be4f9ded8df239e51c8,
         type: 3}
       propertyPath: m_Name
-      value: Curtain_Spots_240x140
+      value: Curtain_PolkaDots
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdc1059a7ab76be4f9ded8df239e51c8, type: 3}
@@ -530,7 +530,7 @@ PrefabInstance:
     - target: {fileID: 4937196908944545610, guid: a09fd58a5280e2745a2399aadf291515,
         type: 3}
       propertyPath: m_Name
-      value: Curtain_Square_240x140
+      value: Curtain_Grid
       objectReference: {fileID: 0}
     - target: {fileID: 4937196908944575338, guid: a09fd58a5280e2745a2399aadf291515,
         type: 3}
@@ -599,7 +599,7 @@ PrefabInstance:
     - target: {fileID: 4473524081383388863, guid: 57d86d3c0111aa447b4e8cc9d16cc3a5,
         type: 3}
       propertyPath: m_Name
-      value: Curtain_Denim_240x140
+      value: Curtain_Denim
       objectReference: {fileID: 0}
     - target: {fileID: 4473524081383484063, guid: 57d86d3c0111aa447b4e8cc9d16cc3a5,
         type: 3}
@@ -798,7 +798,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1308547876}
   - component: {fileID: 1308547875}
-  - component: {fileID: 1308547874}
+  - component: {fileID: 1308547877}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -806,25 +806,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1308547874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1308547873}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
 --- !u!114 &1308547875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -855,6 +836,45 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1308547877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1308547873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
 --- !u!1001 &1405416828
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -920,7 +940,7 @@ PrefabInstance:
     - target: {fileID: 8049096419728846460, guid: e84a60e750e908e4cb4a2581af6696c4,
         type: 3}
       propertyPath: m_Name
-      value: Curtain_Triangle_240x140
+      value: Curtain_Triangle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e84a60e750e908e4cb4a2581af6696c4, type: 3}
@@ -1271,7 +1291,7 @@ PrefabInstance:
     - target: {fileID: 3262265599267889958, guid: 52cf42db281f47841a5be27b48715b43,
         type: 3}
       propertyPath: m_Name
-      value: Curtain_Checkered_240x140
+      value: Curtain_Checkered
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52cf42db281f47841a5be27b48715b43, type: 3}

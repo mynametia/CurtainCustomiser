@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5478846886665230245}
   m_Layer: 0
   m_Name: Curtain_Denim
-  m_TagString: Untagged
+  m_TagString: Denim
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
