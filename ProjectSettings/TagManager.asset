@@ -11,6 +11,7 @@ TagManager:
   - Triangles
   - Grid
   - Zebra Stripes
+  - mainCanvas
   layers:
   - Default
   - TransparentFX
