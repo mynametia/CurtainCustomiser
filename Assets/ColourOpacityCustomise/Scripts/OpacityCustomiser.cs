@@ -9,7 +9,8 @@ public class OpacityCustomiser : MonoBehaviour
     public void UpdateCurtain(Renderer curtain)
     {
         curtainRenderer = curtain;
-        slider.value = 1;
+        slider.value = 0;
+        SliderUpdateOpacity();
     }
 
     public void SliderUpdateOpacity()

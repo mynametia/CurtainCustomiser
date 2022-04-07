@@ -4,7 +4,7 @@ public class UiController : MonoBehaviour
 {
     public GameObject CollapsableUI;
     public GameObject ButtonArrow;
-    public bool collapsed = true;
+    public bool collapsed = false;
     public int reverse = 1;
 
     void Start()

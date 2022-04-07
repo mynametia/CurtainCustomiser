@@ -1,4 +1,3 @@
-//using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,12 +7,6 @@ public class ColourSelectionController : MonoBehaviour
     public GameObject togglePrefab, currentCurtain;
 
     private List<ColourPreset> colourPresets;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        //UpdateColourPresets(currentCurtain);
-    }
 
     // Called when new colour is selected
     public void UpdateCurtainColour(string colourName)
