@@ -12,7 +12,7 @@ public class ColourSelectionController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        UpdateColourPresets(currentCurtain);
+        //UpdateColourPresets(currentCurtain);
     }
 
     // Called when new colour is selected
@@ -24,6 +24,13 @@ public class ColourSelectionController : MonoBehaviour
     // Called when new curtain type is selected
     public void UpdateColourPresets(GameObject curtainObject)
     {
+        currentCurtain = curtainObject;
+        
+        foreach (Transform child in transform)
+        {
+            GameObject.Destroy(child.gameObject);
+        }
+
         colourPresets = curtainObject.GetComponent<ColourController>().colourPresets;
 
         GameObject t;

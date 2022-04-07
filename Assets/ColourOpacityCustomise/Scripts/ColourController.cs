@@ -26,6 +26,6 @@ public class ColourController : MonoBehaviour
                 break;
             }
         }
-        GetComponent<Renderer>().material.SetTexture("_MainTex", currentColour.texture);
+        GetComponent<Renderer>().sharedMaterial.SetTexture("_MainTex", currentColour.texture);
     }
 }

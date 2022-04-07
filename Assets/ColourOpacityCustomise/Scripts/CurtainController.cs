@@ -37,6 +37,6 @@ public class CurtainController : MonoBehaviour
             }
         }
         colorChanger.GetComponent<ColourSelectionController>().UpdateColourPresets(currentCurtain);
-        opacityChanger.GetComponent<OpacityCustomiser>().UpdateColourPresets(currentCurtain.GetComponent<Renderer>());
+        opacityChanger.GetComponent<OpacityCustomiser>().UpdateCurtain(currentCurtain.GetComponent<Renderer>());
     }
 }

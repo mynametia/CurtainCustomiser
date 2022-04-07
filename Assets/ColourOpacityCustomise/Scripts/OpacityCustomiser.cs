@@ -6,9 +6,10 @@ public class OpacityCustomiser : MonoBehaviour
     public Renderer curtainRenderer;
     public Slider slider;
 
-    public void UpdateColourPresets(Renderer curtain)
+    public void UpdateCurtain(Renderer curtain)
     {
         curtainRenderer = curtain;
+        slider.value = 1;
     }
 
     public void SliderUpdateOpacity()
@@ -18,8 +19,8 @@ public class OpacityCustomiser : MonoBehaviour
 
     public void UpdateOpacity(float opacityValue)
     {
-        Color objColor = curtainRenderer.material.color;
+        Color objColor = curtainRenderer.sharedMaterial.color;
         objColor.a = opacityValue;
-        curtainRenderer.material.color = objColor;
+        curtainRenderer.sharedMaterial.color = objColor;
     }
 }
