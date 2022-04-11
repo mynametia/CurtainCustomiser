@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6414984904379832557}
   m_Layer: 0
   m_Name: Curtain_Triangle
-  m_TagString: Untagged
+  m_TagString: Triangles
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

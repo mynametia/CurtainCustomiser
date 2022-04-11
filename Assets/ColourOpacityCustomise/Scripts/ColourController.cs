@@ -1,4 +1,3 @@
-//using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -26,6 +25,6 @@ public class ColourController : MonoBehaviour
                 break;
             }
         }
-        GetComponent<Renderer>().material.SetTexture("_MainTex", currentColour.texture);
+        GetComponent<Renderer>().sharedMaterial.SetTexture("_MainTex", currentColour.texture);
     }
 }
