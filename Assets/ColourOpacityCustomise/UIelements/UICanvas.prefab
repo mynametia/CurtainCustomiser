@@ -130,6 +130,7 @@ MonoBehaviour:
   opacitySlider: {fileID: 5026465781930257249}
   colorChanger: {fileID: 7505864994489940323}
   rightMenu: {fileID: 5806004178299014962}
+  leftMenu: {fileID: 5806004178306977144}
   curtainTransform: {fileID: 0}
 --- !u!1001 &2205380227509242657
 PrefabInstance:
@@ -298,6 +299,12 @@ PrefabInstance:
 --- !u!1 &5806004176980689211 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5622752554149841434, guid: 57e003e196da53a4aa3dd6a98b414bef,
+    type: 3}
+  m_PrefabInstance: {fileID: 2205380227509242657}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5806004178306977144 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5622752553900967513, guid: 57e003e196da53a4aa3dd6a98b414bef,
     type: 3}
   m_PrefabInstance: {fileID: 2205380227509242657}
   m_PrefabAsset: {fileID: 0}

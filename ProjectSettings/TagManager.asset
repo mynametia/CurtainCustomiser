@@ -12,6 +12,7 @@ TagManager:
   - Grid
   - Zebra Stripes
   - mainCanvas
+  - curtainTransform
   layers:
   - Default
   - TransparentFX

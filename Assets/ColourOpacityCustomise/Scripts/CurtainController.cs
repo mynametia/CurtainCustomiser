@@ -10,14 +10,15 @@ public class CurtainController : MonoBehaviour
     public GameObject scrollButtons;
     public GameObject opacitySlider;
     public GameObject colorChanger;
-    public GameObject rightMenu;
-    public Transform curtainTransform;
+    public GameObject rightMenu, leftMenu;
+    public Transform curtainTransform; //find and spawn curtain as child when exists in scene
     // Start is called before the first frame update
 
     void Start()
     { 
         CreateButtons();
         rightMenu.SetActive(false);
+        leftMenu.SetActive(false);
     }
 
     public void CreateButtons(){
@@ -32,18 +33,22 @@ public class CurtainController : MonoBehaviour
 
     public void UpdateCurrentCurtain(string curtain_tag)
     {
-        foreach (GameObject curtain in curtain_list)
+        if (curtainTransform != null)
         {
-            if(curtain_tag == curtain.tag)
+            foreach (GameObject curtain in curtain_list)
             {
-                currentCurtain = InstantiateCurtain(curtain);
-                break;
+                if (curtain_tag == curtain.tag)
+                {
+                    currentCurtain = InstantiateCurtain(curtain);
+
+                    rightMenu.SetActive(false);
+                    rightMenu.SetActive(true);
+                    colorChanger.GetComponent<ColourSelectionController>().UpdateColourPresets(currentCurtain);
+                    opacitySlider.GetComponent<OpacityCustomiser>().UpdateCurtain(currentCurtain.GetComponent<Renderer>());
+                    break;
+                }
             }
         }
-        rightMenu.SetActive(false);
-        rightMenu.SetActive(true);
-        colorChanger.GetComponent<ColourSelectionController>().UpdateColourPresets(currentCurtain);
-        opacitySlider.GetComponent<OpacityCustomiser>().UpdateCurtain(currentCurtain.GetComponent<Renderer>());
     }
 
     public GameObject InstantiateCurtain(GameObject curtainPrefab)
@@ -54,4 +59,12 @@ public class CurtainController : MonoBehaviour
         }
         return Instantiate(curtainPrefab, curtainTransform);
     }
+
+    public void FindCurtainTransform()
+    {
+        curtainTransform = GameObject.FindGameObjectWithTag("curtainTransform").transform;
+        leftMenu.SetActive(true);
+        UpdateCurrentCurtain("Checkered");
+    }
+
 }
