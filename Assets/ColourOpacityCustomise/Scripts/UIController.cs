@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class UiController : MonoBehaviour
+public class UIController : MonoBehaviour
 {
     public GameObject CollapsableUI;
     public GameObject ButtonArrow;
