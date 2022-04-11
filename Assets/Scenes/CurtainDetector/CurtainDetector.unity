@@ -298,6 +298,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ArPrefabs:
   - {fileID: 53381552}
+  Log: {fileID: 0}
 --- !u!1 &562526230
 GameObject:
   m_ObjectHideFlags: 0
