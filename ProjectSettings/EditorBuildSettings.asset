@@ -132,9 +132,15 @@ EditorBuildSettings:
     path: Assets/Scenes/DebugMenu.unity
     guid: 15456b85ccc6645c8825f7a70ae23ff1
   - enabled: 1
+    path: Assets/Scenes/CurtainDetector/CurtainDetector.unity
+    guid: fec502f865596cc42aafe12ecf2f0708
+  - enabled: 1
     path: Assets/ColourOpacityCustomise/ColourOpacityTestScene.unity
     guid: c498606935225c447a4cc8069daccae7
+  - enabled: 1
   m_configObjects:
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 2ee5a38184358ef4d97612605df62c1a,
+      type: 2}
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: f8ce26fe3bc69499b9be4b2378e97a94,
       type: 2}
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 98c79e8cc22674a89a95a3a90e2b70cb,
