@@ -14,6 +14,8 @@ public class CurtainController : MonoBehaviour
     public Transform curtainTransform; //find and spawn curtain as child when exists in scene
     // Start is called before the first frame update
 
+    private string currentCurtainTag = "Checkered";
+
     void Start()
     { 
         CreateButtons();
@@ -33,13 +35,14 @@ public class CurtainController : MonoBehaviour
 
     public void UpdateCurrentCurtain(string curtain_tag)
     {
-        if (curtainTransform != null)
+        if (curtainTransform != null && curtain_tag != currentCurtainTag)
         {
             foreach (GameObject curtain in curtain_list)
             {
                 if (curtain_tag == curtain.tag)
                 {
                     currentCurtain = InstantiateCurtain(curtain);
+                    currentCurtainTag = curtain.tag;
 
                     rightMenu.SetActive(false);
                     rightMenu.SetActive(true);
@@ -64,7 +67,7 @@ public class CurtainController : MonoBehaviour
     {
         curtainTransform = GameObject.FindGameObjectWithTag("curtainTransform").transform;
         leftMenu.SetActive(true);
-        UpdateCurrentCurtain("Checkered");
+        UpdateCurrentCurtain(currentCurtainTag);
     }
 
 }
