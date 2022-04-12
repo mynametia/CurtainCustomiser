@@ -20,7 +20,7 @@ public class CurtainController : MonoBehaviour
     { 
         CreateButtons();
         rightMenu.SetActive(false);
-        leftMenu.SetActive(false);
+        //leftMenu.SetActive(false);
     }
 
     public void CreateButtons(){
@@ -73,7 +73,7 @@ public class CurtainController : MonoBehaviour
     public void FindCurtainTransform(Transform cT)
     {
         curtainTransform = cT;
-        leftMenu.SetActive(true);
+        //leftMenu.SetActive(true);
         UpdateCurrentCurtain(currentCurtainTag);
     }
 
