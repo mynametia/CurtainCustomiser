@@ -35,14 +35,14 @@ public class CurtainController : MonoBehaviour
 
     public void UpdateCurrentCurtain(string curtain_tag)
     {
-        if (curtainTransform != null && curtain_tag != currentCurtainTag)
+        if (curtainTransform != null)
         {
             foreach (GameObject curtain in curtain_list)
             {
                 if (curtain_tag == curtain.tag)
                 {
                     currentCurtain = InstantiateCurtain(curtain);
-                    currentCurtain.transform.localPosition = new Vector3(0,0,0);
+                    currentCurtain.transform.localPosition = new Vector3(0,-1.2f,0);
                     currentCurtainTag = curtain.tag;
 
                     rightMenu.SetActive(false);
