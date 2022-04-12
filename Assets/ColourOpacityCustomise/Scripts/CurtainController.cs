@@ -42,6 +42,7 @@ public class CurtainController : MonoBehaviour
                 if (curtain_tag == curtain.tag)
                 {
                     currentCurtain = InstantiateCurtain(curtain);
+                    currentCurtain.transform.localPosition = new Vector3(0,0,0);
                     currentCurtainTag = curtain.tag;
 
                     rightMenu.SetActive(false);
@@ -60,7 +61,8 @@ public class CurtainController : MonoBehaviour
         {
             GameObject.Destroy(child.gameObject);
         }
-        return Instantiate(curtainPrefab, curtainTransform);
+        GameObject curtain = Instantiate(curtainPrefab, curtainTransform);
+        return curtain;
     }
 
     //public void FindCurtainTransform()
