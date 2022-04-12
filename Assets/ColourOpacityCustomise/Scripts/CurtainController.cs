@@ -63,9 +63,16 @@ public class CurtainController : MonoBehaviour
         return Instantiate(curtainPrefab, curtainTransform);
     }
 
-    public void FindCurtainTransform()
+    //public void FindCurtainTransform()
+    //{
+    //    curtainTransform = GameObject.FindGameObjectWithTag("curtainTransform").transform;
+    //    leftMenu.SetActive(true);
+    //    UpdateCurrentCurtain(currentCurtainTag);
+    //}
+
+    public void FindCurtainTransform(Transform cT)
     {
-        curtainTransform = GameObject.FindGameObjectWithTag("curtainTransform").transform;
+        curtainTransform = cT;
         leftMenu.SetActive(true);
         UpdateCurrentCurtain(currentCurtainTag);
     }
