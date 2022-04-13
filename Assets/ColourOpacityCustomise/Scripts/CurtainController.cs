@@ -42,7 +42,7 @@ public class CurtainController : MonoBehaviour
                 if (curtain_tag == curtain.tag)
                 {
                     currentCurtain = InstantiateCurtain(curtain);
-                    currentCurtain.transform.localPosition = new Vector3(0,-1.2f,0);
+                    currentCurtain.transform.localPosition = new Vector3(-1f,-2.5f,0);
                     currentCurtainTag = curtain.tag;
 
                     rightMenu.SetActive(false);
