@@ -1,3 +1,6 @@
+# CurtainCustomiser
+For CurtainCustomiser, open CurtainDetector, ColourOpacityCustomiser and Curtain Folders under /Assets
+
 # AR Foundation Samples
 
 Example projects that use [*AR Foundation 5.0*](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@5.0/manual/index.html) and demonstrate its functionality with sample assets and components.
